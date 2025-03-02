@@ -1,7 +1,7 @@
 'use client';
 import { BaseEdge, Edge, EdgeProps, getBezierPath } from '@xyflow/react';
 
-type SkillEdge = Edge<{ id:any, sourceX:any, sourceY:any, targetX:any, targetY:any}, 'skillEdge'>;
+type SkillEdge = Edge<{ id:string, sourceX:number, sourceY:number, targetX:number, targetY:number}, 'skillEdge'>;
  
 export default function SkillsEdge({ id, sourceX, sourceY, targetX, targetY }: EdgeProps<SkillEdge>) {
     const [edgePath] = getBezierPath({

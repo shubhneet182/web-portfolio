@@ -3,12 +3,13 @@ import "./hero-section.css";
 import AnimatedProfile from "./profile-pic-animation";
 import AnimatedName from "./name-animation";
 import AnimatedBioDescription from "./bio-desc-animation";
+import Image from 'next/image'
 
 export default function HeroSection() {
     return (
         <div className="flex animated-background h-[36rem] bg-gradient-to-tl from-black via-zinc-950 via-blue-950 to-cyan-600" >
             <div className="pl-32 py-24 pr-12 basis-3/5 flex flex-col justify-between flex-shrink-0">
-            <h2 className="text-teal-400 text-[2.5rem]">Hi, I'm</h2>
+            <h2 className="text-teal-400 text-[2.5rem]">Hi, I&apos;m</h2>
             <AnimatedName
                 name = {<h1 className=" animate-fadeInLeft text-white text-[5.3rem]">Shubhneet Sandhu</h1>
                 } />
@@ -33,7 +34,13 @@ export default function HeroSection() {
             </a>
             </div>
             <AnimatedProfile
-                profile = {<img className="m-4 pr-24 h-[32rem] object-fill ..." src="shubh-pic4.png" alt="profile pic"/>}
+                profile = {<Image
+                    src="/shubh-pic4.png"
+                    width={450}
+                    height={450}
+                    className="m-8"
+                    alt="profile pic"
+              />}
                 />
             </div>
         </div>

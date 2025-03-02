@@ -1,6 +1,6 @@
 'use client';
 import React, { useCallback, useEffect, useState } from 'react';
-import { ReactFlow, useNodesState, useEdgesState, addEdge } from '@xyflow/react';
+import { ReactFlow, useNodesState, useEdgesState } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import SkillsNode from './customNode';
 import SkillsEdge from './customEdge';
@@ -139,6 +139,7 @@ const initialNodes = [
  
 export default function SkillGraph() {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
     const [positionsFinalized, setPositionsFinalized] = useState(false);
 
@@ -162,6 +163,7 @@ export default function SkillGraph() {
     }, [setNodes]);
 
     // Save node positions when dragging stops (ONLY if not finalized)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const onNodeDragStop = useCallback((event:any, node:any) => {
         if (positionsFinalized) return; // Ignore future changes
 
@@ -172,13 +174,13 @@ export default function SkillGraph() {
             localStorage.setItem('nodes', JSON.stringify(updatedNodes)); // Save once
             return updatedNodes;
         });
-    }, [positionsFinalized]);
+    }, [positionsFinalized, setNodes]);
 
     // Finalize positions (prevent further saving)
-    const finalizePositions = () => {
-        setPositionsFinalized(true);
-        localStorage.setItem('positionsFinalized', JSON.stringify(true));
-    };
+    // const finalizePositions = () => {
+    //     setPositionsFinalized(true);
+    //     localStorage.setItem('positionsFinalized', JSON.stringify(true));
+    // };
 
   return (
     <div>

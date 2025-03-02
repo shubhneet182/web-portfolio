@@ -2,11 +2,21 @@ import "tailwindcss";
 import TimelineScroll from "./experienceTimeline";
 import AnimatedName from "./name-animation";
 
-export const EduExperienceComponent = (data:any) => {
+interface ExperienceData {
+    title: string;
+    organization: string;
+    location: string;
+    toDate: string;
+    endDate: string;
+    description: string;
+    type: string;
+  }
+
+export const EduExperienceComponent = (data:ExperienceData) => {
     return(
         <li className="relative h-[20rem]">
             {/* Time */}
-            <p className="block font-bold leading-none text-gray-400 pb-6">{data.exp.toDate} - {data.exp.endDate}</p>
+            <p className="block font-bold leading-none text-gray-400 pb-6">{data.toDate} - {data.endDate}</p>
             <div className="flex items-center">                
                 {/* Icon */}
                 <div className="z-10 flex items-center justify-center w-8 h-8 bg-amber-100 rounded-full ring-0 dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -25,20 +35,20 @@ export const EduExperienceComponent = (data:any) => {
             </div>
             {/* Data */}
             <div className="mt-4 sm:pe-8 text-wrap w-[25rem]">
-                <h3 className="text-lg font-semibold text-white dark:text-white pb-2">{data.exp.title}</h3>
-                <h4 className="font-semibold text-teal-400 dark:text-white">{data.exp.organization}</h4>
-                <h5 className="text-gray-300 dark:text-white pb-4">{data.exp.location}</h5>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">{data.exp.description}</p>
+                <h3 className="text-lg font-semibold text-white dark:text-white pb-2">{data.title}</h3>
+                <h4 className="font-semibold text-teal-400 dark:text-white">{data.organization}</h4>
+                <h5 className="text-gray-300 dark:text-white pb-4">{data.location}</h5>
+                <p className="text-base font-normal text-gray-400 dark:text-gray-400">{data.description}</p>
             </div>
         </li>
     )  
 }
 
-export const WorkExperienceComponent = (data:any) => {
+export const WorkExperienceComponent = (data:ExperienceData) => {
     return(
         <li className="relative h-[20rem]">
             {/* Time */}
-            <p className="block font-bold leading-none text-gray-400 pb-6">{data.exp.toDate} - {data.exp.endDate}</p>
+            <p className="block font-bold leading-none text-gray-400 pb-6">{data.toDate} - {data.endDate}</p>
             <div className="flex items-center">
                 {/* Icon */}
                 <div className="z-10 flex items-center justify-center w-8 h-8 bg-sky-200 rounded-full ring-0 dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -56,11 +66,11 @@ export const WorkExperienceComponent = (data:any) => {
             </div>
             {/* Data */}
             <div className="mt-3 sm:pe-8 text-wrap w-[25rem]">
-                <h3 className="text-lg font-semibold text-white dark:text-white pb-2">{data.exp.title}</h3>
-                <h4 className="font-semibold text-teal-400 dark:text-white">{data.exp.organization}</h4>
-                <h5 className="text-gray-300 dark:text-white pb-4">{data.exp.location}</h5>
-                <time className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500 pb-4">{data.exp.toDate} - {data.exp.endDate}</time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">{data.exp.description}</p>
+                <h3 className="text-lg font-semibold text-white dark:text-white pb-2">{data.title}</h3>
+                <h4 className="font-semibold text-teal-400 dark:text-white">{data.organization}</h4>
+                <h5 className="text-gray-300 dark:text-white pb-4">{data.location}</h5>
+                <time className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500 pb-4">{data.toDate} - {data.endDate}</time>
+                <p className="text-base font-normal text-gray-00 dark:text-gray-400">{data.description}</p>
             </div>
         </li>
     )  
@@ -167,8 +177,8 @@ export default function ExperienceSection() {
                 </div></li>
                 {experiences.map((data, index) => 
                         data.type == "school" ?
-                        <EduExperienceComponent key={index} exp={data} /> :
-                        <WorkExperienceComponent key={index} exp={data} />)}
+                        <EduExperienceComponent key={index} {...data} /> :
+                        <WorkExperienceComponent key={index} {...data} />)}
             </div>
             </TimelineScroll>
         </div>
