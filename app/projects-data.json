@@ -1,0 +1,93 @@
+[
+    {
+        "Project Title": "Skin AI",
+        "Background": "Skin conditions can be tricky—what looks like a harmless rash could be something more serious. Skinopathy, a Toronto-based medical startup, is addressing this challenge by making dermatological care faster and more accurate using AI. As part of my AI Capstone project at Georgian College’s AI Postgraduate Certificate program, I collaborated with Skinopathy to optimize their AI-powered skin lesion classifier, ensuring better accuracy in detecting different types of skin conditions.",
+        "Objective": "This project focused on advancing AI in dermatology by addressing two key challenges. First, it aimed to improve the skin lesion classifier by exploring state-of-the-art deep learning models. Second, it focused on developing a depth algorithm for wound analysis using stereoscopic images and 3D markers.\nMy Role: \n✔️ Fine-tuned EfficientNetV2 & ViT models for 8 skin lesion types. Optimized datasets by sorting, cropping, relabeling, and de-blurring thousands of images.\n✔️ Conducted iterative training and hyperparameter tuning to improve accuracy, expanding datasets (1-9) for diverse, high-quality inputs.",
+        "Key Features": [
+                        "🔹Deep Learning for Dermatology – AI-driven skin lesion classification.",
+                        "🔹Advanced Image Processing – Improved dataset quality for better model accuracy.",
+                        "🔹Fine-tuned ML Models – Iterative testing to push performance."
+                    ],
+        "Tech Stack": [
+                        "🔸EfficientNetV2",
+                        "🔸TensorFlow", 
+                        "🔸Vision Transformer (ViT)",
+                        "🔸Model Soup",
+                        "🔸Data Augmentation"
+                    ],
+        "bg-cover": "skinopathy-bg-cover.jpg",
+        "bg-full": "skinopathy-bg-full.jpg"
+    },
+    {
+        "Project Title": "Enterprise Eye Q",
+        "Background": "In my final semester of BTech in Computer Science, I completed a 6-month paid internship at PureSoftware Pvt. Ltd., working on the Enterprise EyeQ project for U.S. OEMs. The project aimed to support major automobile manufacturers in targeting the right customers for increased sales.",
+        "Objective": "This project aimed to create a cloud-based predictive and marketing automation solution for OEMs like Audi, Volvo, and BMW, helping them target the best customers for campaigns and automate the approval process. It provided transparent tracking features, enabling smarter, data-driven decisions to increase sales through discounts and rebates.\nMy Role:\n✔️ Improved the User Management page by refining user roles and permissions, and migrated the role system to support multiple permissions (e.g., is_creator, is_approver).\n✔️ Redesigned the Audience Selection page for efficiency, developed features like campaign PDF generation, and created modals for Activity History and Support.\n✔️ Multi-Approver Flow – Contributed to the multi-approver workflow and worked on resolving bugs and optimizing all components using Azure DevOps, ensuring smoother functionality and issue resolution in a production environment.",
+        "Key Features": [
+                        "🔹Targeted Marketing & Audience Selection – Identifies likely customers for discounts and simplifies selection process through intuitive UI.",
+                        "🔹Campaign Automation & Reporting – Automates the approval process and generates PDFs for transparent tracking and record-keeping.",
+                        "🔹Activity History Tracking – Tracks and displays actions taken on campaigns for better transparency."
+                    ],
+        "Tech Stack": [
+                        "🔸 React JS, Redux",
+                        "🔸 Chart JS",
+                        "🔸 Java",
+                        "🔸 PostgreSQL"
+                    ],
+        "bg-cover": "eeq-bg-cover.jpg",
+        "bg-full": "eeq-bg-full.jpg"
+    },
+    {
+        "Project Title": "Text Analytics",
+        "Background": "During my third-year internship at Fidelity International Ltd. (FIL) in Gurugram, India, I worked on Text Analytics, an internal platform that enhances data-driven decision-making using NLP. FIL is a globally recognized investment management company offering mutual funds, pension management, and fund platforms.",
+        "Objective": "The project streamlined text analysis by offering two key functionalities. The first, Summarization, combined extractive and abstractive techniques to generate concise summaries, extract key points, and analyze documents for Named Entity Recognition (NER), supporting even two-column structures. The second, Theme Extraction, allowed users to upload Excel spreadsheets with customer feedback, which were processed to generate interactive dashboards identifying dominant themes, sentiment trends, and recurring keywords. Using VADER Sentiment Analysis, the platform provided an in-depth evaluation of customer sentiment, all while leveraging Natural Language Processing (NLP) to analyze large volumes of text and provide meaningful insights.\nMy Role:\n✔️ Developed and fine-tuned the Summarization and Theme Extraction modules, implementing advanced NLP models for precise summaries, NER-based keyword extraction, and sentiment classification with VADER.\n✔️ Designed and improved the user interface (UI) in ReactJS, ensuring a seamless and engaging user experience.",
+        "Key Features": [
+                        "🔹Summarization & NER Keyword Extraction – Intelligent text summarization and identification of crucial terms.",
+                        "🔹Sentiment Analysis – Advanced sentiment classification for deeper customer insights.",
+                        "🔹Visual Theme Extraction – Interactive dashboards analyzing common topics in user feedback."
+                    ],
+        "Tech Stack": [
+                        "🔸Natural Language Processing (NLP)",
+                        "🔸FastAPI", 
+                        "🔸ReactJS"
+                    ],
+        "bg-cover": "textanalytics-bg-cover.jpg",
+        "bg-full": "textanalytics-bg-full.jpg"
+    },
+    {
+        "Project Title": "Rock-Paper-Scissors Using Reinforcement Learning",
+        "Background": "As part of my Reinforcement Learning course during my AI Postgraduate Certificate program, I developed a Rock-Paper-Scissors game powered by reinforcement learning. The game allows users to either observe two AI agents compete or play against the AI themselves, showcasing the adaptability of reinforcement learning in decision-making scenarios.",
+        "Objective": "The goal of this project was to build an AI agent that could analyze the opponent’s moves, adapt its strategy, and maximize its chances of winning in the classic Rock-Paper-Scissors game. I implemented Q-learning with an Epsilon-Greedy policy to balance exploration and exploitation. Additionally, through hyperparameter tuning, I experimented with different learning rates, discount factors, and exploration strategies, evaluating their impact on the AI’s performance. I observed that higher learning rates improved adaptability, while lower exploration rates led to better exploitation of learned strategies. However, extremely high exploration rates resulted in inconsistent decision-making, and lower learning rates slowed adaptation.",
+        "Key Features": [
+                        "🔹Smart Gameplay – Play against a reinforcement learning-trained AI agent.",
+                        "🔹Adaptive Strategy – The AI learns and refines its moves over multiple rounds.",
+                        "🔹Q-learning Implementation – Optimized decision-making through reinforcement learning.",
+                        "🔹Hyperparameter Tuning – Experimented with learning rates, discount factors, and exploration strategies."
+                    ],
+        "Tech Stack": [
+                        "🔸Q-learning",
+                        "🔸Epsilon-Greedy Policy", 
+                        "🔸NumPy & Matplotlib",
+                        "🔸Python"
+                    ],
+        "bg-cover": "rockpaperscissors-bg-cover.jpg",
+        "bg-full": "rockpaperscissors-bg-full.jpg"
+    },
+    {
+        "Project Title": "Bollywood/Hollywood",
+        "Background": "As a teenager, one of my favorite games with friends was Bollywood/Hollywood, a word-guessing game similar to Hangman. To preserve this memory, I developed a mobile app version of the game, allowing players to relive the experience digitally.",
+        "Objective": "This mobile app, built using Flutter, brings the classic Bollywood/Hollywood guessing game to Android and iOS. One player enters a movie name and selects either Bollywood or Hollywood, after which all consonants in the movie name are replaced with underlines. The other player must guess the consonants, with each incorrect guess turning a letter of \"Bollywood\" or \"Hollywood\" red. The game ends when the player either correctly guesses the movie or all letters of the selected film industry turn red, resulting in a loss.",
+        "Key Features": [
+                        "🔹Classic Word-Guessing Gameplay – Digital adaptation of a nostalgic game.",
+                        "🔹Multi-Industry Selection – Choose between Bollywood or Hollywood films.",
+                        "🔹Interactive & Engaging UI – Real-time feedback on correct and incorrect guesses.",
+                        "🔹Cross-Platform Compatibility – Runs on both Android & iOS."
+                    ],
+        "Tech Stack": [
+                        "🔸Flutter",
+                        "🔸Dart", 
+                        "🔸State Management"
+                    ],
+        "bg-cover": "bollywoodhollywood-bg-cover.jpg",
+        "bg-full": "bollywoodhollywood-bg-full.jpg"
+    }
+]

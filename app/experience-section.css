@@ -1,0 +1,26 @@
+.experience-container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;     /* For Firefox */
+}
+
+.first-li {
+    position: relative;
+    height: 13rem;
+}
+
+.start-line-outer {
+    display: flex;
+    align-items: center;
+}
+
+.start-line {
+    width: 2rem;
+    height: 0.1rem;
+    background-color: #e5e7eb; /* gray-200 */
+    /* display: none; hidden by default */
+}
