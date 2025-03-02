@@ -1,6 +1,5 @@
 'use client';
 import { BaseEdge, Edge, EdgeProps, getBezierPath } from '@xyflow/react';
-import { color } from 'framer-motion';
 
 type SkillEdge = Edge<{ id:any, sourceX:any, sourceY:any, targetX:any, targetY:any}, 'skillEdge'>;
  
