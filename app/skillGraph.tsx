@@ -1,6 +1,8 @@
 'use client';
+import dynamic from 'next/dynamic';
+const ReactFlow = dynamic(() => import('@xyflow/react').then(mod => mod.ReactFlow), { ssr: false });
 import React, { useCallback, useEffect, useState } from 'react';
-import { ReactFlow, useNodesState, useEdgesState } from '@xyflow/react';
+import { useNodesState, useEdgesState } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import SkillsNode from './customNode';
 import SkillsEdge from './customEdge';
@@ -193,9 +195,9 @@ export default function SkillGraph() {
       <ReactFlow 
         nodes={nodes}
         edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onNodeDragStop={onNodeDragStop} 
+        // onNodesChange={onNodesChange}
+        // onEdgesChange={onEdgesChange}
+        // onNodeDragStop={onNodeDragStop} 
         // onConnect={onConnect}
         zoomOnScroll={false}
         preventScrolling={false}

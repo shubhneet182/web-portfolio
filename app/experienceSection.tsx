@@ -69,8 +69,7 @@ export const WorkExperienceComponent = (data:ExperienceData) => {
                 <h3 className="text-lg font-semibold text-white dark:text-white pb-2">{data.title}</h3>
                 <h4 className="font-semibold text-teal-400 dark:text-white">{data.organization}</h4>
                 <h5 className="text-gray-300 dark:text-white pb-4">{data.location}</h5>
-                <time className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500 pb-4">{data.toDate} - {data.endDate}</time>
-                <p className="text-base font-normal text-gray-00 dark:text-gray-400">{data.description}</p>
+                <p className="text-base font-normal text-gray-400 dark:text-gray-400">{data.description}</p>
             </div>
         </li>
     )  
@@ -78,15 +77,6 @@ export const WorkExperienceComponent = (data:ExperienceData) => {
 
 export default function ExperienceSection() {
     const experiences = [
-                            {
-                                title:"High School", 
-                                organization:"Amity International School", 
-                                location:"Noida, U.P., India",
-                                toDate:"2014", 
-                                endDate:"2018", 
-                                description:"Graduated with 93.60% from CBSE Board", 
-                                type:"school"
-                            },
                             {
                                 title:"Bachelor of Technology - Computer Science & Engineering", 
                                 organization:"Deenbandhu Chhotu Ram University of Science and Technology", 
