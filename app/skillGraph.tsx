@@ -143,7 +143,7 @@ export default function SkillGraph() {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-    // const [positionsFinalized, setPositionsFinalized] = useState(false);
+    const [positionsFinalized, setPositionsFinalized] = useState(false);
 
     // const onConnect = useCallback(
     //     (params:any) => setEdges((eds) => addEdge(params, eds)),
@@ -166,17 +166,17 @@ export default function SkillGraph() {
 
     // Save node positions when dragging stops (ONLY if not finalized)
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    // const onNodeDragStop = useCallback((event:any, node:any) => {
-    //     if (positionsFinalized) return; // Ignore future changes
+    const onNodeDragStop = useCallback((event:any, node:any) => {
+        if (positionsFinalized) return; // Ignore future changes
 
-    //     setNodes((nds) => {
-    //         const updatedNodes = nds.map((n) =>
-    //             n.id === node.id ? { ...n, position: node.position } : n
-    //         );
-    //         localStorage.setItem('nodes', JSON.stringify(updatedNodes)); // Save once
-    //         return updatedNodes;
-    //     });
-    // }, [positionsFinalized, setNodes]);
+        setNodes((nds) => {
+            const updatedNodes = nds.map((n) =>
+                n.id === node.id ? { ...n, position: node.position } : n
+            );
+            localStorage.setItem('nodes', JSON.stringify(updatedNodes)); // Save once
+            return updatedNodes;
+        });
+    }, [positionsFinalized, setNodes]);
 
     // Finalize positions (prevent further saving)
     // const finalizePositions = () => {
@@ -193,11 +193,11 @@ export default function SkillGraph() {
     )} */}
     <div style={{ width: 'w-screen', height: '150vh' }}>
       <ReactFlow 
-        nodes={nodes}
+        nodes={initialNodes}
         edges={edges}
         // onNodesChange={onNodesChange}
         // onEdgesChange={onEdgesChange}
-        // onNodeDragStop={onNodeDragStop} 
+        onNodeDragStop={onNodeDragStop} 
         // onConnect={onConnect}
         zoomOnScroll={false}
         preventScrolling={false}
