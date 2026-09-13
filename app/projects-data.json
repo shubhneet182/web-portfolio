@@ -1,7 +1,24 @@
 [
     {
+        "Project Title": "AutoHack 2.0 — Hackathon Portal",
+        "Background": "As the volunteer lead organizer of AutoHack 2.0, a two-day collegiate hackathon at Georgian College, I sole-built and deployed a full-stack event management portal live during the event itself. The portal handled everything from team registration to judging — and was later selected by a government sponsor for reuse at a future hackathon.",
+        "Objective": "The goal was to build a real-time, multi-role event management system from scratch, deployed and running live across a 2-day hackathon.\nMy Role:\n✔️ Sole developer and lead organizer — designed, built, and deployed the entire portal solo.\n✔️ Handled team registration, real-time mentor and robot schedule booking, and mentor availability dashboards.\n✔️ Built a judging portal and admin controls used live on the day of the event.",
+        "Key Features": [
+            "🔹Live Event Management – Real-time team registration and scheduling during the hackathon.",
+            "🔹Multi-Role Portal – Separate dashboards for participants, mentors, judges, and admins.",
+            "🔹Government Reuse – Portal selected by a government sponsor for use at a future event."
+        ],
+        "Tech Stack": [
+            "🔸Streamlit",
+            "🔸Node.js",
+            "🔸Vercel"
+        ],
+        "bg-cover": "project-img-sample.png",
+        "bg-full": "project-img-sample.png"
+    },
+    {
         "Project Title": "Skin AI",
-        "Background": "Skin conditions can be tricky—what looks like a harmless rash could be something more serious. Skinopathy Inc., a Toronto-based medical startup, is addressing this challenge by making dermatological care faster and more accurate using AI. As part of my AI Capstone project at Georgian College’s AI Postgraduate Certificate program, I collaborated with Skinopathy to optimize their AI-powered skin lesion classifier, ensuring better accuracy in detecting different types of skin conditions.",
+        "Background": "Skin conditions can be tricky—what looks like a harmless rash could be something more serious. Skinopathy Inc., a Toronto-based medical startup, is addressing this challenge by making dermatological care faster and more accurate using AI. As part of my AI Capstone project at Georgian College's AI Postgraduate Certificate program, I collaborated with Skinopathy to optimize their AI-powered skin lesion classifier, ensuring better accuracy in detecting different types of skin conditions.",
         "Objective": "This project focused on advancing AI in dermatology by addressing two key challenges. First, it aimed to improve the skin lesion classifier by exploring state-of-the-art deep learning models. Second, it focused on developing a depth algorithm for wound analysis using stereoscopic images and 3D markers.\nMy Role: \n✔️ Fine-tuned EfficientNetV2 & ViT models for 8 skin lesion types. Optimized datasets by sorting, cropping, relabeling, and de-blurring thousands of images.\n✔️ Conducted iterative training and hyperparameter tuning to improve accuracy, expanding datasets (1-9) for diverse, high-quality inputs.",
         "Key Features": [
                         "🔹Deep Learning for Dermatology – AI-driven skin lesion classification.",
@@ -10,7 +27,7 @@
                     ],
         "Tech Stack": [
                         "🔸EfficientNetV2",
-                        "🔸TensorFlow", 
+                        "🔸TensorFlow",
                         "🔸Vision Transformer (ViT)",
                         "🔸Model Soup",
                         "🔸Data Augmentation"
@@ -47,7 +64,7 @@
                     ],
         "Tech Stack": [
                         "🔸Natural Language Processing (NLP)",
-                        "🔸FastAPI", 
+                        "🔸FastAPI",
                         "🔸ReactJS"
                     ],
         "bg-cover": "textanalytics-bg-cover.jpg",
@@ -56,7 +73,7 @@
     {
         "Project Title": "Rock-Paper-Scissors Using Reinforcement Learning",
         "Background": "As part of my Reinforcement Learning course during my AI Postgraduate Certificate program, I developed a Rock-Paper-Scissors game powered by reinforcement learning. The game allows users to either observe two AI agents compete or play against the AI themselves, showcasing the adaptability of reinforcement learning in decision-making scenarios.",
-        "Objective": "The goal of this project was to build an AI agent that could analyze the opponent’s moves, adapt its strategy, and maximize its chances of winning in the classic Rock-Paper-Scissors game. I implemented Q-learning with an Epsilon-Greedy policy to balance exploration and exploitation. Additionally, through hyperparameter tuning, I experimented with different learning rates, discount factors, and exploration strategies, evaluating their impact on the AI’s performance. I observed that higher learning rates improved adaptability, while lower exploration rates led to better exploitation of learned strategies. However, extremely high exploration rates resulted in inconsistent decision-making, and lower learning rates slowed adaptation.",
+        "Objective": "The goal of this project was to build an AI agent that could analyze the opponent's moves, adapt its strategy, and maximize its chances of winning in the classic Rock-Paper-Scissors game. I implemented Q-learning with an Epsilon-Greedy policy to balance exploration and exploitation. Additionally, through hyperparameter tuning, I experimented with different learning rates, discount factors, and exploration strategies, evaluating their impact on the AI's performance. I observed that higher learning rates improved adaptability, while lower exploration rates led to better exploitation of learned strategies. However, extremely high exploration rates resulted in inconsistent decision-making, and lower learning rates slowed adaptation.",
         "Key Features": [
                         "🔹Smart Gameplay – Play against a reinforcement learning-trained AI agent.",
                         "🔹Adaptive Strategy – The AI learns and refines its moves over multiple rounds.",
@@ -65,7 +82,7 @@
                     ],
         "Tech Stack": [
                         "🔸Q-learning",
-                        "🔸Epsilon-Greedy Policy", 
+                        "🔸Epsilon-Greedy Policy",
                         "🔸NumPy & Matplotlib",
                         "🔸Python"
                     ],
@@ -84,7 +101,7 @@
                     ],
         "Tech Stack": [
                         "🔸Flutter",
-                        "🔸Dart", 
+                        "🔸Dart",
                         "🔸State Management"
                     ],
         "bg-cover": "bollywoodhollywood-bg-cover.jpg",
