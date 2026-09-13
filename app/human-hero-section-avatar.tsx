@@ -10,7 +10,7 @@ function HalfHumanAvatar() {
         <primitive 
             object={scene}  
             position={[-0.25, -0.30, -1]} 
-            rotation={[0.08, Math.PI / -24, 0]}
+            rotation={[0.14, Math.PI / -35, 0]}
             scale={2.0}
             />
     )
